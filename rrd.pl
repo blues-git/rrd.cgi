@@ -1559,7 +1559,7 @@ EOT
 EOT
             if( !$is_set_no_preview ) {
                 push @graph_text, <<EOT;
-    onmouseover="return overlib(OLpreviewImage('$item_relative-$detailed_freq.$imagetype'), CAPTION, 'Detailed View for $itemname', WIDTH, 602);"
+    onmouseover="return overlib(OLpreviewImage('$item_relative-$detailed_freq.$imagetype'), CAPTION, '$itemname', WIDTH, 602);"
     onmouseout="nd();"
 EOT
             }
