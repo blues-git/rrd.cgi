@@ -1392,7 +1392,7 @@ EOT
 
     if (defined $directories{$dir}{subdir} and @{$directories{$dir}{subdir}}) {
         push @subdir_text, <<EOT;
-            <h1 class="subheading">Subdirectories in $dir1</h1>
+            <h1 class="subheading">$dir1</h1>
             <div class="menuitem">
             <small>More graphs are available in the following subdirectories</small>
             <ul class="listAsTable">
@@ -1616,10 +1616,10 @@ EOT
 <small>These are archived snapshots kept on the filesystem. Serving them
 up via a web-viewable directory carries a very low performance hit.</small>
 <br/>
-Display of
+Display mode:
 <a href="?mode=daily">daily</a>,
 <a href="?mode=monthly">monthly</a>,
-<a href="?mode=yearly">yearly</a> archival modes is supported.
+<a href="?mode=yearly">yearly</a>.
 EOT
 
     print <<EOT;
