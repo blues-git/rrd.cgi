@@ -237,7 +237,7 @@ EOT
     print <<EOT unless defined $tgt->{ignoretimestamps};
 <h1 class="subheading">Timestamp</h1>
 <div class="menuitem">
-@{[ strftime("%A, %d %B, %H:%M:%S %Z", localtime($mtime)) ]}
+@{[ strftime("%c %Z", localtime($mtime)) ]}
 EOT
 
     print <<EOT;
